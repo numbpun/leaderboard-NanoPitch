@@ -63,7 +63,7 @@
 <body>
   <h1>NanoPitch Student Leaderboard</h1>
   <p class="subtitle">
-    9 submissions &nbsp;·&nbsp; Last updated: 2026-04-17 &nbsp;·&nbsp;
+    12 submissions &nbsp;·&nbsp; Last updated: 2026-04-17 &nbsp;·&nbsp;
     Realtime Viterbi decoder &nbsp;·&nbsp;
     <a href="LEADERBOARD.md">Static MD table</a>
   </p>
@@ -120,8 +120,11 @@ const D = {
     "Brady Chase",
     "Charis NoiseAugBaseline",
     "Dillon Positive Weight",
+    "Uddhav Jain",
     "Charis Test",
     "Rajat Sharma",
+    "Uddhav Jain",
+    "Uddhav Jain",
     "Uddhav Jain",
     "Stefan Snyder - Baseline",
     "Charis - Noise Augmentation v2"
@@ -178,6 +181,14 @@ const D = {
       91.8
     ],
     [
+      95.04,
+      85.18,
+      88.25,
+      89.62,
+      91.56,
+      92.49
+    ],
+    [
       94.82,
       88.04,
       87.32,
@@ -200,6 +211,22 @@ const D = {
       90.18,
       91.96,
       91.93
+    ],
+    [
+      92.47,
+      88.4,
+      86.79,
+      88.61,
+      91.62,
+      88.81
+    ],
+    [
+      91.84,
+      89.8,
+      84.01,
+      88.01,
+      94.13,
+      93.34
     ],
     [
       91.12,
@@ -252,6 +279,14 @@ const D = {
       8.2
     ],
     [
+      4.96,
+      14.82,
+      11.75,
+      10.38,
+      8.44,
+      7.51
+    ],
+    [
       5.18,
       11.96,
       12.68,
@@ -276,6 +311,22 @@ const D = {
       8.07
     ],
     [
+      7.53,
+      11.6,
+      13.21,
+      11.39,
+      8.38,
+      11.19
+    ],
+    [
+      8.16,
+      10.2,
+      15.99,
+      11.99,
+      5.87,
+      6.66
+    ],
+    [
       8.88,
       19.02,
       14.6,
@@ -297,9 +348,12 @@ const D = {
     96.81,
     96.61,
     95.37,
+    95.04,
     94.82,
     93.83,
     93.29,
+    92.47,
+    91.84,
     91.12,
     90.08
   ],
@@ -308,9 +362,12 @@ const D = {
     93.42,
     91.89,
     92.2,
+    90.36,
     90.2,
     91.86,
     90.32,
+    89.45,
+    90.19,
     86.28,
     88.03
   ],
@@ -319,9 +376,12 @@ const D = {
     3.19,
     3.39,
     4.63,
+    4.96,
     5.18,
     6.17,
     6.71,
+    7.53,
+    8.16,
     8.88,
     9.92
   ],
@@ -330,9 +390,12 @@ const D = {
     6.58,
     8.11,
     7.8,
+    9.64,
     9.8,
     8.14,
     9.68,
+    10.55,
+    9.81,
     13.72,
     11.96
   ],
@@ -386,6 +449,18 @@ const D = {
       "vad_macro": 95.15
     },
     {
+      "name": "Uddhav Jain",
+      "note": "Training run: my_first_model. Baseline-style experiment used to establish an initial reference score on the leaderboard. Checkpoint source: NanoPitch/training/runs/my_first_model/checkpoints/best.pth (submitted as weights.pth).",
+      "rpa_clean": 95.04,
+      "rpa_macro": 90.36,
+      "ger_clean": 4.96,
+      "ger_macro": 9.64,
+      "vdr_clean": 81.5,
+      "vdr_macro": 65.3,
+      "vad_clean": 98.81,
+      "vad_macro": 86.78
+    },
+    {
       "name": "Charis Test",
       "note": "Baseline run with default hyperparameters (gru_size=96, cond_size=64, lr=1e-3).",
       "rpa_clean": 94.82,
@@ -420,6 +495,30 @@ const D = {
       "vdr_macro": 57.88,
       "vad_clean": 96.51,
       "vad_macro": 94.43
+    },
+    {
+      "name": "Uddhav Jain",
+      "note": "Training run: my_second_model. Follow-up experiment after the first baseline run; submitted to compare leaderboard performance across runs. Checkpoint source: NanoPitch/training/runs/my_second_model/checkpoints/best.pth (submitted as weights.pth).",
+      "rpa_clean": 92.47,
+      "rpa_macro": 89.45,
+      "ger_clean": 7.53,
+      "ger_macro": 10.55,
+      "vdr_clean": 66.08,
+      "vdr_macro": 61.76,
+      "vad_clean": 97.49,
+      "vad_macro": 94.91
+    },
+    {
+      "name": "Uddhav Jain",
+      "note": "Training run: my_third_model. Additional experiment submitted for side-by-side leaderboard evaluation. Checkpoint source: NanoPitch/training/runs/my_third_model/checkpoints/best.pth (submitted as weights.pth).",
+      "rpa_clean": 91.84,
+      "rpa_macro": 90.19,
+      "ger_clean": 8.16,
+      "ger_macro": 9.81,
+      "vdr_clean": 48.14,
+      "vdr_macro": 45.66,
+      "vad_clean": 96.61,
+      "vad_macro": 94.28
     },
     {
       "name": "Stefan Snyder - Baseline",
