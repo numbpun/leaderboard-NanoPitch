@@ -1,6 +1,6 @@
 # NanoPitch Student Leaderboard
 
-*Last updated: 2026-04-17*
+*Last updated: 2026-04-16*
 
 All metrics use the **realtime Viterbi decoder** (no lookahead), matching the browser deployment.
 

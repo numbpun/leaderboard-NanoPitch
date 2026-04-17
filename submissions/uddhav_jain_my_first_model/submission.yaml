@@ -1,2 +1,2 @@
-name: "Uddhav Jain"
+name: "Uddhav Jain Clean"
 note: "Training run: my_first_model. Baseline-style experiment used to establish an initial reference score on the leaderboard. Checkpoint source: NanoPitch/training/runs/my_first_model/checkpoints/best.pth (submitted as weights.pth)."
