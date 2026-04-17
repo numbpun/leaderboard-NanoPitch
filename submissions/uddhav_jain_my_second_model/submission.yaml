@@ -1,0 +1,2 @@
+name: "Uddhav Jain"
+note: "Training run: my_second_model. Follow-up experiment after the first baseline run; submitted to compare leaderboard performance across runs. Checkpoint source: NanoPitch/training/runs/my_second_model/checkpoints/best.pth (submitted as weights.pth)."
