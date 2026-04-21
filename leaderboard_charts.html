@@ -63,7 +63,7 @@
 <body>
   <h1>NanoPitch Student Leaderboard</h1>
   <p class="subtitle">
-    12 submissions &nbsp;·&nbsp; Last updated: 2026-04-17 &nbsp;·&nbsp;
+    13 submissions &nbsp;·&nbsp; Last updated: 2026-04-21 &nbsp;·&nbsp;
     Realtime Viterbi decoder &nbsp;·&nbsp;
     <a href="LEADERBOARD.md">Static MD table</a>
   </p>
@@ -118,6 +118,7 @@ const D = {
   "labels": [
     "Festus Ewakaa Kahunla",
     "Brady Chase",
+    "Uddhav Jain",
     "Charis NoiseAugBaseline",
     "Dillon Positive Weight",
     "Uddhav Jain",
@@ -163,6 +164,14 @@ const D = {
       92.06,
       94.43,
       94.32
+    ],
+    [
+      96.66,
+      91.64,
+      91.94,
+      91.82,
+      95.23,
+      95.14
     ],
     [
       96.61,
@@ -263,6 +272,14 @@ const D = {
       5.68
     ],
     [
+      3.34,
+      8.36,
+      8.06,
+      8.18,
+      4.77,
+      4.86
+    ],
+    [
       3.39,
       12.21,
       11.19,
@@ -346,6 +363,7 @@ const D = {
   "rpa_clean": [
     97.1,
     96.81,
+    96.66,
     96.61,
     95.37,
     95.04,
@@ -360,6 +378,7 @@ const D = {
   "rpa_macro": [
     91.67,
     93.42,
+    93.74,
     91.89,
     92.2,
     90.36,
@@ -374,6 +393,7 @@ const D = {
   "ger_clean": [
     2.9,
     3.19,
+    3.34,
     3.39,
     4.63,
     4.96,
@@ -388,6 +408,7 @@ const D = {
   "ger_macro": [
     8.33,
     6.58,
+    6.26,
     8.11,
     7.8,
     9.64,
@@ -423,6 +444,18 @@ const D = {
       "vdr_macro": 64.19,
       "vad_clean": 80.01,
       "vad_macro": 81.13
+    },
+    {
+      "name": "Uddhav Jain",
+      "note": "GRU-128 VDR-focused training/curriculum (exported checkpoint: expD_best).",
+      "rpa_clean": 96.66,
+      "rpa_macro": 93.74,
+      "ger_clean": 3.34,
+      "ger_macro": 6.26,
+      "vdr_clean": 76.11,
+      "vdr_macro": 67.47,
+      "vad_clean": 98.57,
+      "vad_macro": 95.77
     },
     {
       "name": "Charis NoiseAugBaseline",
